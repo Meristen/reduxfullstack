@@ -1,0 +1,88 @@
+button {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #625f5f;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #636365;
+  transition: 0.5s ease;
+}
+
+button:hover {
+  color: #373937;
+  transition-delay: 0.5s;
+}
+
+button:hover::before {
+  width: 100%;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #d9d7f1;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+button:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
+.red {
+  color: #f53939;
+}
+.red::before {
+  background-color: #f53939;
+}
+.red:hover {
+  color: #ffffff;
+}
+.red::after {
+  background-color: #eb7777;
+}
+
+.green {
+  color: #229131;
+}
+.green::before {
+  background-color: #229131;
+}
+.green:hover {
+  color: #ffffff;
+}
+.green::after {
+  background-color: #35de4c;
+}
+
+.blue {
+  color: #2b2291;
+}
+.blue::before {
+  background-color: #2b2291;
+}
+.blue:hover {
+  color: #ffffff;
+}
+.blue::after {
+  background-color: #4c3eed;
+}

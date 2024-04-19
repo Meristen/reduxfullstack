@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  min-height: 100px;
+  background-color: #0b0909;
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+.avatar {
+  margin: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.navs {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar {
+  border: 1px solid rgb(169, 21, 21);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 50px;
+  z-index: 1;
+  padding: 20px;
+  background-color: white;
+}
+.navbar a,
+.navbar span {
+  color: rgb(67, 87, 200);
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navbar a:hover,
+.navbar span:hover {
+  color: rgb(231, 40, 206);
+}

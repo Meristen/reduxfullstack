@@ -1,0 +1,18 @@
+.contCard {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #6a6161;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  margin: 20px;
+}
+.cardImg {
+  width: 300px;
+  height: 300px;
+}
